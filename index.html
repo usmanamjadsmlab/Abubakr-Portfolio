@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PortFolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400&family=Poppins:wght@500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="./Images/Favicon-icon.png">
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init({
+                publicKey: "-6Vq8B6-AS_qy3lrq",
+            });
+        })();
+    </script>
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html">
+                <img src="./Images/Abubakr Logo.png" class="logo" alt="">
+            </a>
+            <div class="nav-links" id="navLinks">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#service">Service</a>
+                <a href="#resume">Resume</a>
+                <a href="#portfolio">Portfolio</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="menu-icon" id="menuIcon">&#9776;</div>
+        </nav>
+    </header>
+
+    <section id="home" class="android-hero">
+        <div class="hero-content">
+            <h2>Android Specialist</h2>
+            <h1>M. Abubakr Amjad</h1>
+            <div class="android-tag">NATIVE ANDROID DEVELOPER</div>
+            <p>I craft high-performance Android applications with Kotlin and Jetpack components, delivering seamless
+                user experiences to millions.</p>
+
+            <div class="card">
+                <a class="socialContainer containerOne" href="https://github.com/MianAbubakr" target="_blank">
+                    <svg viewBox="0 0 16 16" class="socialSvg githubSvg">
+                        <path fill-rule="evenodd"
+                            d="M8 0C3.58 0 0 3.58 0 8a8 8 0 005.47 7.59c.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.11 0 0 .67-.22 2.2.82a7.65 7.65 0 012-.27 7.68 7.68 0 012 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.09.16 1.91.08 2.11.51.56.82 1.28.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0016 8c0-4.42-3.58-8-8-8z">
+                        </path>
+                    </svg>
+                </a>
+
+                <a class="socialContainer containerThree" href="https://www.linkedin.com/in/abubakramjadofficial/"
+                    target="_blank">
+                    <svg viewBox="0 0 448 512" class="socialSvg linkdinSvg">
+                        <path
+                            d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z">
+                        </path>
+                    </svg>
+                </a>
+
+                <a class="socialContainer containerFour" href="https://wa.me/923348751447" target="_blank">
+                    <svg viewBox="0 0 16 16" class="socialSvg whatsappSvg">
+                        <path
+                            d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z">
+                        </path>
+                    </svg>
+                </a>
+            </div>
+
+
+            <div class="cv-btn">
+                <a href="#contact" class="btn-android">
+                    Hire Me <i class="fas fa-arrow-right"></i>
+                </a>
+                <a href="Abubakr Android Resume.pdf" target="_blank" class="btn-cv">
+                    Download CV <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about-section">
+        <div class="section-title">
+            <h2>About</h2>
+        </div>
+
+        <div class="about-container">
+            <div class="about-row">
+                <div class="about-img">
+                    <img src="./Images/profile_pic.png" alt="Profile Image">
+                </div>
+                <div class="about-content">
+                    <h2>Android Developer</h2>
+                    <p>
+                        Motivated Mobile Developer with 3+ years of Java/Kotlin Android experience, focused on building
+                        dynamic, user-centric applications with clean and efficient code. Skilled in leading teams,
+                        mentoring junior developers, and collaborating to create impactful products.
+                    </p>
+                    <div class="about-info">
+                        <ul>
+                            <li><i class="fas fa-angle-right"></i> <strong>Birthday:</strong> <span>17 March 2000</span>
+                            </li>
+                            <li><i class="fas fa-angle-right"></i> <strong>Phone:</strong> <span>+92 3348751447</span>
+                            </li>
+                            <li><i class="fas fa-angle-right"></i> <strong>City:</strong> <span>Lahore, Pakistan</span>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li><i class="fas fa-angle-right"></i> <strong>Age:</strong> <span>25</span></li>
+                            <li><i class="fas fa-angle-right"></i> <strong>Degree:</strong> <span>bachelor's</span></li>
+                            <li><i class="fas fa-angle-right"></i> <strong>Email:</strong>
+                                <span>abubakramjad321@gmail.com</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="skills">
+            <h2 class="skills-text">Skills</h2>
+            <div class="row">
+                <div class="progress-item Java">
+                    <h3 class="progress-title">Java </h3>
+                    <div class="progress">
+                        <div class="progress-bar">
+                            <div class="progress-value">96%</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="progress-item Kotlin">
+                    <h3 class="progress-title">Kotlin</h3>
+                    <div class="progress">
+                        <div class="progress-bar">
+                            <div class="progress-value">90%</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="progress-item Retrofit">
+                    <h3 class="progress-title">Retrofit</h3>
+                    <div class="progress">
+                        <div class="progress-bar">
+                            <div class="progress-value">88%</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="progress-item MVVM">
+                    <h3 class="progress-title">MVVM</h3>
+                    <div class="progress">
+                        <div class="progress-bar">
+                            <div class="progress-value">88%</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="progress-item Rest-APIs">
+                    <h3 class="progress-title">Rest APIs</h3>
+                    <div class="progress">
+                        <div class="progress-bar">
+                            <div class="progress-value">94%</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="progress-item Jetpack-Compose">
+                    <h3 class="progress-title">Jetpack Compose</h3>
+                    <div class="progress">
+                        <div class="progress-bar">
+                            <div class="progress-value">89%</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="progress-item Admob">
+                    <h3 class="progress-title">Admob</h3>
+                    <div class="progress">
+                        <div class="progress-bar">
+                            <div class="progress-value">91%</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="progress-item Firebase">
+                    <h3 class="progress-title">Firebase</h3>
+                    <div class="progress">
+                        <div class="progress-bar">
+                            <div class="progress-value">83%</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="progress-item Version-Control">
+                    <h3 class="progress-title">Version Control</h3>
+                    <div class="progress">
+                        <div class="progress-bar">
+                            <div class="progress-value">96%</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="service" class="main-service">
+        <h1 class="service-text-main">My Offered Services</h1>
+        <div class="services-container">
+            <div class="service">
+                <h2 class="service-text">
+                    <i class="fab fa-android" style="margin-right: 0.5em;"></i>
+                    Android App Development
+                </h2>
+                <p class="service-para">Building robust, clean, and maintainable Android applications from scratch using
+                    Java and Kotlin, adhering to industry standards.</p>
+            </div>
+
+            <div class="service">
+                <h2 class="service-text">
+                    <i class="fas fa-plug" style="margin-right: 0.5em;"></i>
+                    API Integration
+                </h2>
+                <p class="service-para">Expertise in integrating REST APIs, JSON, and XML to connect your app with
+                    backend
+                    services and external data sources.</p>
+            </div>
+
+            <div class="service">
+                <h2 class="service-text">
+                    <i class="fas fa-credit-card" style="margin-right: 0.5em;"></i>
+                    Payment Gateway Integration
+                </h2>
+                <p class="service-para">Secure implementation of payment solutions including Stripe integration for
+                    seamless in-app
+                    transactions.</p>
+            </div>
+
+            <div class="service">
+                <h2 class="service-text">
+                    <i class="fas fa-wrench" style="margin-right: 0.5em;"></i>
+                    App Maintenance
+                </h2>
+                <p class="service-para">Modifying and improving existing applications to enhance performance, fix
+                    issues, and add new
+                    features.</p>
+            </div>
+
+            <div class="service">
+                <h2 class="service-text">
+                    <i class="fas fa-fire" style="margin-right: 0.5em;"></i>
+                    Firebase Integration
+                </h2>
+                <p class="service-para">Implementing Firebase services including authentication, realtime database,
+                    cloud messaging,
+                    and chat functionality.</p>
+            </div>
+
+            <div class="service">
+                <h2 class="service-text">
+                    <i class="fab fa-google-play" style="margin-right: 0.5em;"></i>
+                    Play Store Deployment
+                </h2>
+                <p class="service-para">Complete app publishing services including preparing release builds, creating
+                    store
+                    listings, and managing submissions.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="resume" id="resume">
+        <h2 class="resume-title">RESUME</h2>
+        <h1 class="main-title">More of my credentials.</h1>
+        <h3 class="section-title">Work Experience</h3>
+
+        <div class="timeline">
+            <div class="job">
+                <div class="job-title">
+                    <strong>Android Developer</strong><br>
+                    <span>Jan 2022 - Present . 3 years 4 months</span>
+                </div>
+                <div class="circle"></div>
+                <div class="company-details">
+                    <div class="company"><strong>Smart Moves Lab</strong></div>
+                    <p class="resume-text">Android Developer at Smart Move Lab with hands-on experience in building and
+                        maintaining mobile applications.</p>
+                    <div class="key-responsibilities"><strong>Key Responsibilities:</strong></div>
+                    <ul class="resume-text">
+                        <li>Develop and maintain Android applications using Java and Kotlin.</li>
+                        <li>Integrate RESTful APIs using Retrofit for seamless backend communication.</li>
+                        <li>Implement Firebase services including Authentication, Firestore, and Realtime Database.</li>
+                        <li>Integrate and manage AdMob for in-app advertisements and monetization.</li>
+                        <li>Debug, test, and optimize app performance for better stability and efficiency.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+        <h3 class="section-title">Education</h3>
+        <div class="timeline">
+            <div class="job">
+                <div class="job-title">
+                    <strong>Bachelor of Science - BS, Computer Science</strong><br>
+                    <span>2018 -2022</span>
+                </div>
+                <div class="circle-education"></div>
+                <div class="company-details">
+                    <div class="company"><strong>Lahore Leads University -City Campus</strong></div>
+                    <ul class="resume-text">
+                        <li>Major in mathematical foundation in the data science and statistics fields</li>
+                        <li>Statistical Methods, Data Science with Python, Sampling Methodology, etc.</li>
+                        <li>Covered big data, and data mining with python too.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="portfolio">
+        <div class="section-title">
+            <h2>Portfolio</h2>
+        </div>
+        <ul class="portfolio-filters">
+            <li data-filter="*" class="filter-active">All</li>
+            <li data-filter=".filter-app">Beats</li>
+            <li data-filter=".filter-product">Care</li>
+            <li data-filter=".filter-branding">Studio</li>
+            <li data-filter=".filter-books">Explore</li>
+            <li data-filter=".filter-grocery">E-Commerce</li>
+        </ul>
+        <div class="portfolio-container">
+            <div class="portfolio-item filter-app">
+                <img src="./Images/Music DJ with BG.png" alt="App 1" />
+                <div class="portfolio-info">
+                    <h4>Music DJ</h4>
+                </div>
+            </div>
+            <div class="portfolio-item filter-product">
+                <img src="./Images/Doctor App with BG.png" alt="Product 1" />
+                <div class="portfolio-info">
+                    <h4>Doctor Appoinment</h4>
+                </div>
+            </div>
+            <div class="portfolio-item filter-product">
+                <img src="./Images/cancer patient.png" alt="Product 2" />
+                <div class="portfolio-info">
+                    <h4>Cancer Patient</h4>
+                </div>
+            </div>
+            <div class="portfolio-item filter-product">
+                <img src="./Images/physical-visit.png" alt="Product 3" />
+                <div class="portfolio-info">
+                    <h4>Physician Visit</h4>
+                </div>
+            </div>
+            <div class="portfolio-item filter-branding">
+                <img src="./Images/Frame 20.png" alt="Branding 1" />
+                <div class="portfolio-info">
+                    <h4>Image Editor</h4>
+                </div>
+            </div>
+            <div class="portfolio-item filter-books">
+                <img src="./Images/Reizyn Mockup App.png" alt="Books 1" />
+                <div class="portfolio-info">
+                    <h4>Reizyn</h4>
+                </div>
+            </div>
+            <div class="portfolio-item filter-books hidden">
+                <img src="./Images/smart trvael fuf.png" alt="Books 2" />
+                <div class="portfolio-info">
+                    <h4>Smart Travel</h4>
+                </div>
+            </div>
+            <div class="portfolio-item filter-grocery hidden">
+                <img src="./Images/Marhaba-Mart.png" alt="Grocery 1" />
+                <div class="portfolio-info">
+                    <h4>Marhaba Mart</h4>
+                </div>
+            </div>
+            <div class="portfolio-item filter-grocery hidden">
+                <img src="./Images/Quik Pantri Mockup with BG.png" alt="Grocery 2" />
+                <div class="portfolio-info">
+                    <h4>Quik Pantri</h4>
+                </div>
+            </div>
+        </div>
+        <button class="view-more-btn">View More</button>
+    </section>
+
+    <div id="image-modal" class="modal">
+        <span class="modal-close">&times;</span>
+        <img class="modal-content" id="modal-img" />
+    </div>
+
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="heading">
+                <h2>Contact Us</h2>
+                <p>
+                    Have an idea for an Android app or need help with mobile development?<br> Reach out to discuss your
+                    project and bring it to life.
+                </p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="title">
+                        <h3>Contact detail</h3>
+                        <p>For Android app development queries, freelance projects, or collaborations, feel free to get
+                            in touch using the information below.</p>
+                    </div>
+                    <div class="content">
+                        <div class="info">
+                            <i class="fas fa-mobile-alt"></i>
+                            <h4>
+                                <span>+92 334 8751447</span>
+                            </h4>
+                        </div>
+                        <div class="info">
+                            <i class="far fa-envelope"></i>
+                            <h4>
+                                <span>abubakramjad321@gmail.com</span>
+                            </h4>
+                        </div>
+                        <div class="info">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <h4>
+                                <span>Lahore, Pakistan</span>
+                            </h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <form id="contactForm" novalidate>
+                        <div class="form-row">
+                            <div class="form-field">
+                                <input type="text" id="name" class="form-control" placeholder="Name">
+                                <span class="error" id="nameError"></span>
+                            </div>
+                            <div class="form-field">
+                                <input type="email" id="email" class="form-control" placeholder="Email">
+                                <span class="error" id="emailError"></span>
+                            </div>
+                            <div class="form-field full-width">
+                                <input type="text" id="subject" class="form-control" placeholder="Subject">
+                                <span class="error" id="subjectError"></span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" class="form-control" rows="5" placeholder="Message"></textarea>
+                            <span class="error" id="messageError"></span>
+                        </div>
+                        <button type="submit" class="contact-btn">
+                            <div class="svg-wrapper-1">
+                                <div class="svg-wrapper">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                                        <path fill="none" d="M0 0h24v24H0z"></path>
+                                        <path fill="currentColor"
+                                            d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z">
+                                        </path>
+                                    </svg>
+                                </div>
+                            </div>
+                            <span>Send</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Our Mission</h3>
+                <p>
+                    <span class="highlight">WE</span> BUILD SEAMLESS <span class="highlight">
+                        ANDROID</span>EXPERIENCES<br>
+                    <span class="highlight">WE</span> TRANSFORM IDEAS INTO POWERFUL <span class="highlight"> MOBILE
+                    </span> APPS<br>
+                    <span class="highlight">WE</span> DRIVE INNOVATION THROUGH <span class="highlight"> ANDROID </span>
+                    TECHNOLOGY<br>
+                    <span class="highlight">WE</span> CRAFT USER-CENTRIC, <span class="highlight"> FUTURE-READY </span>
+                    SOLUTIONS<br>
+                    <span class="highlight">WE</span> EMPOWER STARTUPS & BRANDS <span class="highlight"> WITH MOBILE
+                    </span> SUCCESS
+                </p>
+
+            </div>
+
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul class="footer-link">
+                    <li><i class="fas fa-angle-right"></i><a href="#about">About Us</a></li>
+                    <li><i class="fas fa-angle-right"></i><a href="#service">Services</a></li>
+                    <li><i class="fas fa-angle-right"></i><a href="#resume">Resume</a></li>
+                    <li><i class="fas fa-angle-right"></i><a href="#portfolio">Portfolio</a></li>
+                    <li><i class="fas fa-angle-right"></i><a href="#contact">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="contact-info">
+                <div class="title">
+                    <h3>Contact detail</h3>
+                    <p>For Android app development queries, freelance projects, or collaborations, feel free to get
+                        in touch using the information below.</p>
+                </div>
+                <div class="contents">
+                    <div class="info">
+                        <i class="fas fa-mobile-alt"></i>
+                        <h4>
+                            <span>+92 334 8751447</span>
+                        </h4>
+                    </div>
+                    <div class="info">
+                        <i class="far fa-envelope"></i>
+                        <h4>
+                            <span>abubakramjad321@gmail.com</span>
+                        </h4>
+                    </div>
+                    <div class="info">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h4>
+                            <span>Lahore, Pakistan</span>
+                        </h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <a href=""><img src="./Images/Abubakr Logo.png" alt="">M. Abubakr Amjad</a>
+        </div>
+    </footer>
+
+    <a href="#" class="back-to-top"><i class="fa-solid fa-arrow-up "></i></a>
+    <script src="script.js"></script>
+</body>
+
+</html>
