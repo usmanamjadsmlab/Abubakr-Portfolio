@@ -18,34 +18,53 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-//Portfolio Category Open
-document.addEventListener("DOMContentLoaded", function () {
-  const filterItems = document.querySelectorAll(".portfolio-filters li");
-  const portfolioItems = document.querySelectorAll(".portfolio-item");
+// Cache buttons/items
+const loadMoreBtn    = document.querySelector(".view-more-btn");
+const hiddenItems    = document.querySelectorAll(".portfolio-item.hidden");
+const filterItems    = document.querySelectorAll(".portfolio-filters li");
+const portfolioItems = document.querySelectorAll(".portfolio-item");
 
-  filterItems.forEach((filter) => {
-    filter.addEventListener("click", function () {
-      // Remove active class from all filters
-      filterItems.forEach((item) => item.classList.remove("filter-active"));
-      this.classList.add("filter-active");
+// “View More” functionality
+loadMoreBtn.addEventListener("click", () => {
+  hiddenItems.forEach(item => item.classList.remove("hidden"));
+  loadMoreBtn.style.display = "none";
+});
 
-      // Get selected filter value
-      const filterValue = this.getAttribute("data-filter");
+// Portfolio filtering + toggle View More
+filterItems.forEach(filter => {
+  filter.addEventListener("click", function () {
+    // 1) Active class
+    filterItems.forEach(f => f.classList.remove("filter-active"));
+    this.classList.add("filter-active");
 
-      // Loop over portfolio items and filter
-      portfolioItems.forEach((item) => {
-        if (
-          filterValue === "*" ||
-          item.classList.contains(filterValue.substring(1))
-        ) {
-          item.style.display = "block";
-        } else {
-          item.style.display = "none";
-        }
-      });
+    // 2) Show/hide items
+    const value = this.getAttribute("data-filter");
+    portfolioItems.forEach(item => {
+      if (value === "*" || item.classList.contains(value.slice(1))) {
+        item.style.display = "block";
+      } else {
+        item.style.display = "none";
+      }
     });
+
+    // 3) Only show “View More” for the All (*) filter
+    //    and only if there are still hidden items left
+    if (value === "*" && hiddenItems.length > 0) {
+      loadMoreBtn.style.display = "inline-block";
+    } else {
+      loadMoreBtn.style.display = "none";
+    }
   });
 });
+
+// On page‑load: if a non‑All tab is pre‑active, hide the button
+document.addEventListener("DOMContentLoaded", () => {
+  const active = document.querySelector(".portfolio-filters .filter-active");
+  if (!active || active.getAttribute("data-filter") !== "*") {
+    loadMoreBtn.style.display = "none";
+  }
+});
+
 
 
 
@@ -84,21 +103,6 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
-
-
-
-//View More Button
-const loadMoreBtn = document.querySelector(".view-more-btn");
-const hiddenItems = document.querySelectorAll(".portfolio-item.hidden");
-
-loadMoreBtn.addEventListener("click", () => {
-  hiddenItems.forEach((item) => {
-    item.classList.remove("hidden");
-  });
-  loadMoreBtn.style.display = "none"; // Button ko hide kar do after loading
-});
-
-
 
 
 
